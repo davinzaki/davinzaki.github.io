@@ -4,183 +4,69 @@ import ThreeComponent from "../Three";
 
 export default function Experience() {
   return (
-    <div>
-      <MainLayout>
-        <Flex
-          direction={"column"}
-          gap={"4"}
-          className="w-full mt-24"
-          justify={"center"}
-        >
-          <Heading as={"h1"}>Experience</Heading>
-          <Flex direction={"column"} gap={"4"}>
-            <Text>Experience</Text>
-            <div>
-              {/* Heading */}
-              <div className="ps-2 my-2 first:mt-0">
-                <h3 className="text-xs font-medium uppercase text-gray-500">
-                  1 Aug, 2023
-                </h3>
-              </div>
-              {/* End Heading */}
-
-              {/* Item */}
-              <div className="flex gap-x-3 relative group rounded-lg hover:bg-gray-100">
-                <a className="absolute inset-0 z-[1]" href="#"></a>
-
-                {/* Icon */}
-                <div className="relative last:after:hidden after:absolute after:top-0 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200">
-                  <div className="relative z-10 size-7 flex justify-center items-center">
-                    <div className="size-2 rounded-full bg-white border-2 border-gray-300 group-hover:border-gray-600"></div>
-                  </div>
-                </div>
-                {/* End Icon */}
-
-                {/* Right Content */}
-                <div className="grow p-2 pb-8">
-                  <h3 className="flex gap-x-1.5 font-semibold text-gray-800">
-                    <svg
-                      className="flex-shrink-0 size-4 mt-1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
-                      <polyline points="14 2 14 8 20 8"></polyline>
-                      <line x1="16" x2="8" y1="13" y2="13"></line>
-                      <line x1="16" x2="8" y1="17" y2="17"></line>
-                      <line x1="10" x2="8" y1="9" y2="9"></line>
-                    </svg>
-                    Created "Preline in React" task
-                  </h3>
-                  <p className="mt-1 text-sm text-gray-600">
-                    Find more detailed instructions here.
-                  </p>
-                  <button
-                    type="button"
-                    className="mt-1 -ms-1 p-1 relative z-10 inline-flex items-center gap-x-2 text-xs rounded-lg border border-transparent text-gray-500 hover:bg-white hover:shadow-sm disabled:opacity-50 disabled:pointer-events-none"
-                  >
-                    <img
-                      className="flex-shrink-0 size-4 rounded-full"
-                      src="https://images.unsplash.com/photo-1659482633369-9fe69af50bfb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=3&w=320&h=320&q=80"
-                      alt="Image Description"
-                    />
-                    James Collins
-                  </button>
-                </div>
-                {/* End Right Content */}
-              </div>
-              {/* End Item */}
-
-              {/* Item */}
-              <div className="flex gap-x-3 relative group rounded-lg hover:bg-gray-100">
-                <a className="absolute inset-0 z-[1]" href="#"></a>
-
-                {/* Icon */}
-                <div className="relative last:after:hidden after:absolute after:top-0 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200">
-                  <div className="relative z-10 size-7 flex justify-center items-center">
-                    <div className="size-2 rounded-full bg-white border-2 border-gray-300 group-hover:border-gray-600"></div>
-                  </div>
-                </div>
-                {/* End Icon */}
-
-                {/* Right Content */}
-                <div className="grow p-2 pb-8">
-                  <h3 className="flex gap-x-1.5 font-semibold text-gray-800">
-                    Release v5.2.0 quick bug fix 🐞
-                  </h3>
-                  <button
-                    type="button"
-                    className="mt-1 -ms-1 p-1 relative z-10 inline-flex items-center gap-x-2 text-xs rounded-lg border border-transparent text-gray-500 hover:bg-white hover:shadow-sm disabled:opacity-50 disabled:pointer-events-none"
-                  >
-                    <span className="flex flex-shrink-0 justify-center items-center size-4 bg-white border border-gray-200 text-[10px] font-semibold uppercase text-gray-600 rounded-full">
-                      A
-                    </span>
-                    Alex Gregarov
-                  </button>
-                </div>
-                {/* End Right Content */}
-              </div>
-              {/* End Item */}
-
-              {/* Item */}
-              <div className="flex gap-x-3 relative group rounded-lg hover:bg-gray-100">
-                <a className="absolute inset-0 z-[1]" href="#"></a>
-
-                {/* Icon */}
-                <div className="relative last:after:hidden after:absolute after:top-0 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200">
-                  <div className="relative z-10 size-7 flex justify-center items-center">
-                    <div className="size-2 rounded-full bg-white border-2 border-gray-300 group-hover:border-gray-600"></div>
-                  </div>
-                </div>
-                {/* End Icon */}
-
-                {/* Right Content */}
-                <div className="grow p-2 pb-8">
-                  <h3 className="flex gap-x-1.5 font-semibold text-gray-800">
-                    Marked "Install Charts" completed
-                  </h3>
-                  <p className="mt-1 text-sm text-gray-600">
-                    Finally! You can check it out here.
-                  </p>
-                  <button
-                    type="button"
-                    className="mt-1 -ms-1 p-1 relative z-10 inline-flex items-center gap-x-2 text-xs rounded-lg border border-transparent text-gray-500 hover:bg-white hover:shadow-sm disabled:opacity-50 disabled:pointer-events-none"
-                  >
-                    <img
-                      className="flex-shrink-0 size-4 rounded-full"
-                      src="https://images.unsplash.com/photo-1659482633369-9fe69af50bfb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=3&w=320&h=320&q=80"
-                      alt="Image Description"
-                    />
-                    James Collins
-                  </button>
-                </div>
-                {/* End Right Content */}
-              </div>
-              {/* End Item */}
-
-              {/* Heading */}
-              <div className="ps-2 my-2 first:mt-0">
-                <h3 className="text-xs font-medium uppercase text-gray-500">
-                  31 Jul, 2023
-                </h3>
-              </div>
-              {/* End Heading */}
-
-              {/* Item */}
-              <div className="flex gap-x-3 relative group rounded-lg hover:bg-gray-100">
-                <a className="absolute inset-0 z-[1]" href="#"></a>
-
-                {/* Icon */}
-                <div className="relative last:after:hidden after:absolute after:top-0 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200">
-                  <div className="relative z-10 size-7 flex justify-center items-center">
-                    <div className="size-2 rounded-full bg-white border-2 border-gray-300 group-hover:border-gray-600"></div>
-                  </div>
-                </div>
-                {/* End Icon */}
-
-                {/* Right Content */}
-                <div className="grow p-2 pb-8">
-                  <h3 className="flex gap-x-1.5 font-semibold text-gray-800">
-                    Take a break ⛳️
-                  </h3>
-                  <p className="mt-1 text-sm text-gray-600">
-                    Just chill for now... 😉
-                  </p>
-                </div>
-                {/* End Right Content */}
-              </div>
-              {/* End Item */}
+    <MainLayout>
+      <Flex
+        direction={"column"}
+        gap={"4"}
+        className="w-full mt-24"
+        justify={"center"}
+      >
+        <Heading as={"h1"}>Experience</Heading>
+        <Flex direction={"column"} gap={"4"}>
+          <div>
+            {/* Heading */}
+            <div className="ps-2 my-2 first:mt-0">
+              <h3 className="text-xs font-medium uppercase ">
+                1 May, 2023 - 1 November, 2024 · 6 mos
+              </h3>
             </div>
-          </Flex>
+            {/* End Heading */}
+
+            {/* Item */}
+            <div className="flex gap-x-3 relative group rounded-lg hover:bg-gray-100  hover:text-slate-800">
+              {/* Icon */}
+              <div className="relative last:after:hidden after:absolute after:top-0 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200">
+                <div className="relative z-10 size-7 flex justify-center items-center">
+                  <div className="size-2 rounded-full bg-white border-2 border-gray-300 group-hover:border-gray-600"></div>
+                </div>
+              </div>
+              {/* End Icon */}
+
+              {/* Right Content */}
+              <div className="grow p-2 pb-8">
+                <h3 className="flex gap-x-1.5 text-lg font-bold ">
+                  Software Engineer
+                </h3>
+                <h5 className="flex gap-x-1.5 text-md  font-semibold ">
+                  KodingWorks · Internship
+                </h5>
+                <p className="mt-1 text-sm ">
+                  Build a CMS Fullstack application for swimming club tracking
+                  app using Laravel and Vue.js
+                </p>
+                <p className="mt-1 text-sm ">
+                  Build a FrontEnd application for Learning Management System
+                  app using Next.js
+                </p>
+                <p className="mt-4 text-sm ">Laravel · Vue.js · Next.js</p>
+                <button
+                  type="button"
+                  className="mt-1 -ms-1 p-1 relative z-10 inline-flex items-center gap-x-2 text-xs rounded-lg border border-transparent  hover:bg-white hover:shadow-sm disabled:opacity-50 disabled:pointer-events-none"
+                >
+                  <img
+                    className="flex-shrink-0 size-12 rounded-full"
+                    src="/kodingworks_logo.jpeg"
+                    alt="Image Description"
+                  />
+                  KodingWorks - Semarang, Central Java, Indonesia · Remote
+                </button>
+              </div>
+              {/* End Right Content */}
+            </div>
+            {/* End Item */}
+          </div>
         </Flex>
-      </MainLayout>
-    </div>
+      </Flex>
+    </MainLayout>
   );
 }

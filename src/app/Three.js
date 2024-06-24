@@ -7,12 +7,12 @@ const ThreeComponent = () => {
   useEffect(() => {
     const scene = new THREE.Scene();
     const clock = new THREE.Clock();
-    const camera = new THREE.PerspectiveCamera(50, 1, 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 1000);
     camera.position.z = 1;
 
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(500, 200);
+    renderer.setSize(700, 200);
     boxRef.current.appendChild(renderer.domElement);
     renderer.setClearColor(0x000000, 0);
 
