@@ -71,7 +71,7 @@ export default function Projects() {
                   target="_blank"
                   href="https://github.com/davinzaki/accounting-app"
                 >
-                  <GlobeIcon />
+                  <CodeIcon />
                 </a>
               </Flex>
             </Flex>
@@ -101,7 +101,7 @@ export default function Projects() {
                   target="_blank"
                   href="https://github.com/davinzaki/inertia-auth"
                 >
-                  <GlobeIcon />
+                  <CodeIcon />
                 </a>
               </Flex>
             </Flex>
@@ -131,7 +131,7 @@ export default function Projects() {
                   target="_blank"
                   href="https://github.com/davinzaki/role-spatie"
                 >
-                  <GlobeIcon />
+                  <CodeIcon />
                 </a>
               </Flex>
             </Flex>
